@@ -1,9 +1,24 @@
-# memo
+# 画像投稿機能付き書籍管理アプリ
+
+- Ruby 2.3.1
+- Rails 5.0.0.1
+
+- http://igarashikuniaki.net/rails_textbook/
+  - CRUDからモデルの章あたり＋画像投稿機能追加
+
+# 実行方法
+
+- bundle install
+- rails s
+
+# 構築方法
+
 ## CRUD
 - rails new books_app
 - cd books_app/
 - rails g scaffold book title:string memo:text
 - rails db:migrate
+
 ## author追加
 - rails g migration AddAuthorToBooks author:string
 - rails db:migrate
